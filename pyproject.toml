@@ -1,0 +1,47 @@
+[project]
+name = "vc-pattern-notebooks"
+version = "0.1.0"
+description = "Reproducible analyses of patterns in venture capital and startup outcomes using only public data."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+    { name = "Max Gorbuk" },
+]
+requires-python = ">=3.11"
+keywords = ["venture-capital", "unicorns", "startups", "data-analysis", "jupyter"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+]
+dependencies = [
+    "pandas>=2.1",
+    "numpy>=1.26",
+    "matplotlib>=3.8",
+    "seaborn>=0.13",
+    "plotly>=5.18",
+    "requests>=2.31",
+    "beautifulsoup4>=4.12",
+    "jupyter>=1.0",
+    "scikit-learn>=1.4",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.3",
+    "nbqa>=1.7",
+    "pytest>=8.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/mkzung/vc-pattern-notebooks"
+Issues = "https://github.com/mkzung/vc-pattern-notebooks/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["scripts"]

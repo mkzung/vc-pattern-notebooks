@@ -1,0 +1,15 @@
+# Ruff config — kept minimal and friendly to analysis scripts.
+
+line-length = 100
+target-version = "py311"
+
+[lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM"]
+ignore = [
+    "E501",  # line too long — analysis code tolerates this
+    "B008",  # function call in default arg — pandas idioms use it
+]
+
+[lint.per-file-ignores]
+"notebooks/*" = ["E402", "E401", "E702", "F401", "F404", "I001", "B018", "B905"]
+"scripts/_*" = ["E501"]
