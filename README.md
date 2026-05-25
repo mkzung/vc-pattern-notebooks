@@ -132,4 +132,4 @@ MIT — see [`LICENSE`](LICENSE).
 
 ## Contact
 
-Max Gorbuk — Research Analyst, Stanford VCI. Issues and PRs welcome. For research collaborations involving non-public data, please reach out through Stanford GSB channels rather than this repo.
+Max Gorbuk — Researcher, Stanford GSB Venture Capital Initiative. Issues and PRs welcome. For research collaborations involving non-public data, please reach out through Stanford GSB channels rather than this repo.
